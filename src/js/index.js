@@ -82,6 +82,7 @@ class ReactJsonView extends React.PureComponent {
     }
 
     componentDidMount() {
+        console.log('this.props____', this.props);
         // initialize
         ObjectAttributes.set(this.rjvId, 'global', 'src', this.state.src);
         // bind to events
